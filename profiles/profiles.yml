@@ -1,0 +1,12 @@
+my_first_dbt:
+  outputs:
+    dev:
+      type: postgres
+      host: host.docker.internal
+      user: postgres
+      password: .RedPoint2021
+      port: 5432
+      dbname: AdventureWorks
+      schema: marketing
+      connect_timeout: 10
+  target: dev

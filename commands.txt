@@ -1,0 +1,57 @@
+docker run --name rpi-dbt --rm --network=host ghcr.io/dbt-labs/dbt-postgres --version
+
+docker run --name rpi-dbt --rm --network=host --mount type=bind,source=D:\Containers\Develop-Latest-PostgreSQL-DBT\External-Services-7-4\dbt\project,target=/usr/app --mount type=bind,source=D:\Containers\Develop-Latest-PostgreSQL-DBT\External-Services-7-4\dbt\profiles,target=/root/.dbt/ ghcr.io/dbt-labs/dbt-postgres init my_first_dbt
+
+docker run --name rpi-dbt --rm --network=host --mount type=bind,source=D:\Containers\Develop-Latest-PostgreSQL-DBT\External-Services-7-4\dbt\project,target=/usr/app --mount type=bind,source=D:\Containers\Develop-Latest-PostgreSQL-DBT\External-Services-7-4\dbt\profiles,target=/root/.dbt/ ghcr.io/dbt-labs/dbt-postgres debug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo "# rpi-dbt-dev" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mike-redpoint/rpi-dbt-dev.git
+git push -u origin main
